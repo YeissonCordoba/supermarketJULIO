@@ -16,7 +16,8 @@ namespace supermarket
 
         public override string ToString()
         {
-            return $"{Id}\t{Description}\n\tPrecio........:\t{$"{ Price:c2}",15}\n\tTax...........:\t{$"{ Tax:p2}",15}";
+            return $"  {Id}  {Description}";
+
         }
 
     }

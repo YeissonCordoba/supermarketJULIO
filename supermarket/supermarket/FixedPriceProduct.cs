@@ -9,7 +9,8 @@ namespace supermarket
         }
         public override string ToString()
         {
-            return $"**Productos con Precio Fijo**\n {base.ToString()}\n\tValor.........:\t{$"{ValueToPay():c2}",15}";
+            return $"{base.ToString()}\n\tPrice.........:{$"{Price:C2}",15}" +
+                $"\n\tTax...........:{$"{Tax:P2}",15}\n\tValue.........:{$"{ValueToPay():C2}",15}";
         }
     }
 }

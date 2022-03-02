@@ -26,7 +26,9 @@
             {
                 listP += Market.Description + ", ";
             };
-            return $"**Productos con Precio Compuesto**\n{Id}\t{Description}\n\tProductos.....:\t{listP}\n\tDescuento.....:\t{$"{Discount:p2}",15}\n\tValor.........:\t{$"{ValueToPay():c2}",15}";
+            return $"{base.ToString()}\n\tProducts......:\t" +
+                $"{listP}\n\tDiscount......:\t{$"{Discount:p2}",15}\n\t" +
+                $"Value.........:\t{$"{ValueToPay():c2}",15}";
         }
     }
 }
